@@ -19,3 +19,15 @@
 .bold {
   @apply font-bold
 }
+
+.paddingTop {
+  @apply pt-[100.44px]
+}
+
+.ctaButton {
+  @apply inline-flex gap-2 bg-emerald-600 px-6 hover:bg-emerald-700 rounded-full text-white duration-200
+}
+
+.secondaryButton {
+  @apply inline-flex gap-2 border rounded-full px-6 border-neutral-300 text-white hover:bg-white hover:text-black hover:border-transparent duration-200
+}

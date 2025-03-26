@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Personas() {
     return(
-        <section>
-            <div className="w-full bg-black py-15">
+        <section className="paddingTop">
+            <div className="w-full bg-black py-15 bg-cover bg-center bg-[url(https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/gucvblu7lkofybswolts)]">
                 <h1 className="titulo text-center">Personas</h1>
             </div>
             <div className="grid grid-cols-2 gap-10 px-20 py-30">
