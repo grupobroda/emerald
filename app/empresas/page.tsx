@@ -6,7 +6,7 @@ export default function Empresas() {
             <div className="w-full bg-black py-15 rounded-lg shadow-md bg-cover bg-center bg-[url(https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/xcfn4oihppai0p0yxg8n)]">
                 <h1 className="titulo text-center">Empresas</h1>
             </div>
-            <div className="grid grid-cols-2 gap-10 py-30">
+            <div className="grid grid-cols-2 gap-10 py-30 lg:flex lg:flex-col">
                 <article className="card">
                     <h2 className="subtitulo">Instrumentos para el manejo de Flujo de Fondos</h2>
                     <p>En el mercado de capitales encontrarás herramientas para la gestión de los pesos sobrantes con rendimientos atractivos y la liquidez necesaria para disponer inmediatamente de los fondos.</p>

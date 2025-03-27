@@ -6,7 +6,7 @@ export default function Personas() {
             <div className="bg-black py-15 rounded-lg shadow-md bg-cover bg-center bg-[url(https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/gucvblu7lkofybswolts)]">
                 <h1 className="titulo text-center">Personas</h1>
             </div>
-            <div className="grid grid-cols-2 gap-10 py-30">
+            <div className="grid grid-cols-2 gap-10 py-30 lg:flex lg:flex-col">
                 <article className="card">
                     <h2 className="subtitulo">Carteras de inversión según tu perfil de riesgo</h2>
                     <p>Conocé tu perfil de riesgo e invertí tu dinero en la estrategia correcta:</p>

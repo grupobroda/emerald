@@ -7,14 +7,14 @@ export default function FamilyOffice() {
                 <h1 className="titulo text-center">Multi Family Office</h1>
             </div>
             <div className="flex flex-col items-center gap-10">
-                <h2 className="subtitulo pt-20 w-[60%]">Emerald Capital Multi Family Office se origina a partir de la administración del propio patrimonio de nuestra familia empresaria.</h2>
-                <div className="flex flex-col gap-5 w-[60%]">
+                <h2 className="subtitulo pt-20 w-[60%] lg:w-full">Emerald Capital Multi Family Office se origina a partir de la administración del propio patrimonio de nuestra familia empresaria.</h2>
+                <div className="flex flex-col gap-5 w-[60%] lg:w-full">
                     <p>A través de la confianza con otras familias empresarias y respaldados por la experiencia financiera de nuestros colaboradores, ofrecemos un servicio de excelencia profesional. Comprendemos de primera mano los desafíos que se presentan y proporcionamos soluciones personalizadas para abordar factores internos y externos.</p>
                     <p>Buscamos generar independencia al construir relaciones sin conflictos de intereses y con objetivos alineados, priorizando siempre lo mejor para nuestros clientes.</p>
                     <p>Colaboramos con instituciones de renombre como Harvard Business School, Sistema B y Endeavor, entre otras destacadas alianzas.</p>
                 </div>
             </div>
-            <div className="grid grid-cols-2 gap-10 py-30">
+            <div className="grid grid-cols-2 gap-10 py-30 lg:flex lg:flex-col">
                 <article className="card">
                     <h2 className="subtitulo">1. Asesoramiento Integral</h2>
                     <div className="flex flex-col gap-10">

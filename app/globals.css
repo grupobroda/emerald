@@ -1,7 +1,15 @@
 @import "tailwindcss";
 
+@custom-variant 2xl (@media (max-width: 1535px));
+@custom-variant xl (@media (max-width: 1279px));
+@custom-variant lg (@media (max-width: 1023px));
+@custom-variant md (@media (max-width: 767px));
+@custom-variant sm (@media (max-width: 639px));
+@custom-variant xs (@media (max-width: 400px));
+@custom-variant xxs (@media (max-width: 320px));
+
 .wrapperHeader {
-  @apply bg-transparent from-black/80 to-transparent bg-linear-to-b w-screen min-h-20
+  @apply from-black/80 to-transparent bg-linear-to-b w-screen min-h-20
 }
 
 .wrapperCorporativo {

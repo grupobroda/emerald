@@ -23,7 +23,7 @@ const INFO_MOCK = [
 
 export default function Informacion() {
     return(
-        <section className="grid grid-cols-3 p-20 pt-30 gap-5">
+        <section className="grid grid-cols-3 p-20 pt-30 gap-5 lg:flex lg:flex-col">
             {INFO_MOCK.map((info)=> {
                 return(
                     <article key={info.titulo} className="flex flex-col items-center text-center py-30 gap-10 bg-white p-10 rounded-lg bg-center bg-cover bg-no-repeat relative" style={{backgroundImage: `url(${info.imagen})`}}>
