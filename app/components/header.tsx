@@ -18,7 +18,9 @@ export default function Header() {
                     <Link href="/aplicacion" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">App</Link>
                 </ul>
             </div>
-            <a href="https://clientes.emeraldcapitalglobal.com/" target="_blank" className="ctaButton py-3 rounded duration-200"><ChartIcon/>Comenzar a operar</a>
+            <div className="md:hidden">
+                <a href="https://clientes.emeraldcapitalglobal.com/" target="_blank" className="ctaButton py-3 rounded duration-200"><ChartIcon/>Comenzar a operar</a>
+            </div>
         </header>
     )
 }

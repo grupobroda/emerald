@@ -43,3 +43,7 @@
 .secondaryButton {
   @apply inline-flex gap-2 border rounded-full px-6 border-neutral-300 text-white hover:bg-white hover:text-black hover:border-transparent duration-200
 }
+
+.degradadoTexto {
+  @apply from-[#2dccb1] to-[#218F7F] bg-gradient-to-r bg-clip-text text-transparent
+}
