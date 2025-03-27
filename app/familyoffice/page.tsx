@@ -2,8 +2,8 @@ import React from "react";
 
 export default function FamilyOffice() {
     return(
-        <section className="paddingTop">
-            <div className="w-full bg-black py-15">
+        <section className="paddingTop px-10">
+            <div className="w-full bg-black py-15 rounded-lg shadow-md">
                 <h1 className="titulo text-center">Multi Family Office</h1>
             </div>
             <div className="flex flex-col items-center gap-10">
@@ -14,7 +14,7 @@ export default function FamilyOffice() {
                     <p>Colaboramos con instituciones de renombre como Harvard Business School, Sistema B y Endeavor, entre otras destacadas alianzas.</p>
                 </div>
             </div>
-            <div className="grid grid-cols-2 gap-10 px-20 py-30">
+            <div className="grid grid-cols-2 gap-10 py-30">
                 <article className="card">
                     <h2 className="subtitulo">1. Asesoramiento Integral</h2>
                     <div className="flex flex-col gap-10">

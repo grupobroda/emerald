@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
+.wrapperHeader {
+  @apply bg-transparent from-black/80 to-transparent bg-linear-to-b w-screen min-h-20
+}
+
 .wrapperCorporativo {
-  @apply bg-[#034941] w-screen min-h-20
+  @apply bg-[#034941] bg-linear-to-b w-screen min-h-20
 }
 
 .card {

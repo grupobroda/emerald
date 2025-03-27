@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Personas() {
     return(
-        <section className="paddingTop">
-            <div className="w-full bg-black py-15 bg-cover bg-center bg-[url(https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/gucvblu7lkofybswolts)]">
+        <section className="paddingTop px-10">
+            <div className="bg-black py-15 rounded-lg shadow-md bg-cover bg-center bg-[url(https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/gucvblu7lkofybswolts)]">
                 <h1 className="titulo text-center">Personas</h1>
             </div>
-            <div className="grid grid-cols-2 gap-10 px-20 py-30">
+            <div className="grid grid-cols-2 gap-10 py-30">
                 <article className="card">
                     <h2 className="subtitulo">Carteras de inversión según tu perfil de riesgo</h2>
                     <p>Conocé tu perfil de riesgo e invertí tu dinero en la estrategia correcta:</p>
