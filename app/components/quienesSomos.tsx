@@ -75,7 +75,7 @@ export default function QuienesSomos() {
             <div className="grid grid-cols-4 gap-10 lg:grid-cols-3 md:flex md:flex-col">
                 {INTEGRANTES_EQUIPO.map((integrante)=> {
                     return(
-                        <article key={integrante.nombre} className="bg-neutral-500 rounded-lg w-full h-[300px] relative bg-cover bg-center bg-no-repeat overflow-hidden group md:bg-top md:h-[400px]" style={{backgroundImage: `url(${integrante.foto})`}}>
+                        <article key={integrante.nombre} className="bg-neutral-500 rounded-lg w-full h-[300px] relative bg-cover bg-center bg-no-repeat overflow-hidden translateTransition group md:bg-top md:h-[400px]" style={{backgroundImage: `url(${integrante.foto})`}}>
                             <div className="absolute p-3 pb-4 bottom-0 from-black to-transparent bg-linear-to-t w-full rounded-b-lg">
                                 <h3 className="text-white text-2xl font-bold">{integrante.nombre}</h3>
                                 <span className="text-sm text-neutral-300">{integrante.labor}</span>

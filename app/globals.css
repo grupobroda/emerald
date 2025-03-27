@@ -47,3 +47,7 @@
 .degradadoTexto {
   @apply from-[#2dccb1] to-[#218F7F] bg-gradient-to-r bg-clip-text text-transparent
 }
+
+.translateTransition {
+  @apply hover:-translate-y-1 duration-200
+}
