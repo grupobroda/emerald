@@ -4,15 +4,9 @@ import React from "react";
 import AvailablePlaystore from "./atoms/availablePlayStore"
 import AvailableAppStore from "./atoms/availapleAppStore"
 import { motion } from "motion/react"
+import { transition } from "../lib/transitions";
 
 export default function AppSection() {
-
-    const transition = {
-        duration: 0.8,
-        delay: 0.3,
-        ease: [0, 0.71, 0.2, 1.01],
-      }
-
     return(
         <section className="relative grid grid-cols-2 w-screen min-h-40 bg-linear-to-r from-[#1C8675] via-[#167364] to-[#218F7F] py-10 px-20 md:flex md:flex-col md:px-10">
             <div className="flex flex-col gap-15">

@@ -7,48 +7,7 @@ import ChevronLeft from "../assets/icons/chevronleft"
 import ChevronRight from "../assets/icons/chevronright"
 import PauseIcon from "../assets/icons/pause"
 import PlayIcon from "../assets/icons/play"
-
-const INTEGRANTES_EQUIPO = [
-    {
-        nombre: "Elena Alonso",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/js4sup0ech0gwicgtynq",
-        labor: "Cofounder & CEO",
-        linkedin: "https://ar.linkedin.com/in/elena-alonso-economista",
-    },
-    {
-        nombre: "Aroma Vallejo",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/yd3flzmuolmfcgxk1jjn",
-        labor: "Wealth Management Relationship",
-        linkedin: "https://www.linkedin.com/in/aromajulietavallejo/",
-    },
-    {
-        nombre: "Victoria Jardel",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/xle1pyouc1mka7xmlamr",
-        labor: "Local Financial Advisor",
-        linkedin: "https://www.linkedin.com/in/victoria-jardel/",
-    },
-    {
-        nombre: "Melany Borgia",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/c29xpzsgofnm0vlhunn4",
-        labor: "Jr. Investment Analyst",
-        linkedin: "https://www.linkedin.com/in/melany-borgia-093090226/",
-    },
-    {
-        nombre: "Emiliano Sanchez Farés",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/gkyki6kdax7u5wve9l7a",
-        labor: "Local Commercial Relationship",
-        linkedin: "https://www.linkedin.com/in/emiliano-sanchez-far%C3%A9s-188a1578/",
-    },
-    {
-        nombre: "Fernando Ibarra",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/tlinhu4wwlgqkczxlgfz",
-        labor: "Asset Management & Investment Specialist",
-        linkedin: "https://www.linkedin.com/in/fernando-ibarra-0533a6190/",
-    },
-]
-
-
-
+import { INTEGRANTES_EQUIPO } from "../lib/mocks";
 
 export default function Carousel() {
 

@@ -1,34 +1,8 @@
 import Link from "next/link";
 import React from "react";
-
-const INFO_MOCK = [
-    {
-        titulo: "Personas",
-        texto: "Ayudamos a potenciar tus ahorros, mediante la inversión en mercado de capitales, teniendo en cuenta tus objetivos, perfil de riesgo y horizonte temporal.",
-        imagen: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/r5i0wgqcjrwjx28nj7r7",
-        url: "/personas"
-    },
-    {
-        titulo: "Empresas",
-        texto: "Asesoramos a empresas en sus necesidades de manejo de flujo de caja y de financiamiento.",
-        imagen: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/g8wtgd73yygonsiyf415",
-        url: "/empresas"
-    },
-    {
-        titulo: "Multi Family Office",
-        texto: "Apoyamos a las familias empresarias en la gestión de su patrimonio, aconsejando sobre buenas prácticas para la preservación del mismo.",
-        imagen: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/vr3aom1znrx98opfmbbq",
-        url: "/familyoffice"
-    }]
+import {INFO_MOCK} from "../lib/mocks";
 
 export default function Informacion() {
-
-    const transition = {
-        duration: 0.8,
-        delay: 0.3,
-        ease: [0, 0.71, 0.2, 1.01],
-    }
-
     return(
         <section className="grid grid-cols-3 p-20 pt-30 gap-5 lg:flex lg:flex-col md:px-10">
             {INFO_MOCK.map((info)=> {

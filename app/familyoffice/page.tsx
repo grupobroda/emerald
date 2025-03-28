@@ -2,27 +2,9 @@
 
 import React from "react";
 import { motion } from "motion/react";
+import {transition, secondTransition, thirdTransition} from "../lib/transitions"
 
 export default function FamilyOffice() {
-
-    const transition = {
-        duration: 0.8,
-        delay: 0.3,
-        ease: [0, 0.71, 0.2, 1.01],
-    }
-
-    const secondTransition = {
-        duration: 0.8,
-        delay: 0.5,
-        ease: [0, 0.71, 0.2, 1.01],
-    }
-
-    const thirdTransition = {
-        duration: 0.8,
-        delay: 0.7,
-        ease: [0, 0.71, 0.2, 1.01],
-    }
-
     return(
         <section className="paddingTop px-10">
             <motion.div initial={{ opacity: 0, y: -10}} animate={{ opacity: 1, y: 0 }} className="w-full bg-black py-15 rounded-lg shadow-md">
