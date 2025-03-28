@@ -23,10 +23,10 @@ export default function Header() {
             </Link>
             <div>
                 <ul className="flex justify-center gap-10 text-white lg:hidden">
-                    <a href="#quienesSomos" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">Nosotros</a>
-                    <a href="" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">Mercado</a>
-                    <Link href="" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">FAQ</Link>
-                    <a href="" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">Contacto</a>
+                    <Link href="#quienesSomos" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">Nosotros</Link>
+                    <Link href="" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">Mercado</Link>
+                    <Link href="#faq" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">FAQ</Link>
+                    <Link href="" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">Contacto</Link>
                     <Link href="/aplicacion" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">App</Link>
                 </ul>
             </div>

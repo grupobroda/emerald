@@ -54,7 +54,7 @@ const INTEGRANTES_EQUIPO = [
 export default function QuienesSomos() {
 
     return (
-        <section className="flex flex-col gap-20 py-20 px-80 lg:px-20 md:px-0" id="quienesSomos">
+        <section className="flex flex-col gap-20 pt-20 px-80 lg:px-20 md:px-0" id="quienesSomos">
             <div className="grid grid-cols-2 gap-10 xl:flex xl:flex-col">
                 <div className="flex flex-col gap-5 p-5 rounded-lg md:px-0">
                     <div className="inline-flex items-center gap-3 md:flex-col">
