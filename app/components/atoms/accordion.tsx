@@ -1,10 +1,10 @@
 "use client"
 
 import ChevronLeft from "@/app/assets/icons/chevronleft";
-import React, { useState } from "react";
+import React, { ReactNode, useState } from "react";
 import { motion } from "motion/react";
 
-export default function Accordion({title, content}) {
+export default function Accordion({ title, content }: { title: string, content: ReactNode }) {
 
     const [opened, setOpened] = useState(false)
 
@@ -14,13 +14,13 @@ export default function Accordion({title, content}) {
                 <div className="pr-3">
                     {title}
                 </div>
-                <div className="inline-flex items-center justify-center -rotate-90 transition-transform min-w-10 min-h-10 border border-neutral-300 rounded-full group-hover:border-neutral-400" style={opened ? {rotate: "90deg", borderColor: "white"} : null}>
+                <div className="inline-flex items-center justify-center -rotate-90 transition-transform min-w-10 min-h-10 border border-neutral-300 rounded-full group-hover:border-neutral-400" style={opened ? {rotate: "90deg", borderColor: "white"} : undefined}>
                     <ChevronLeft/>
                 </div>
             </div>
             {opened && (
                 <motion.div initial={{ opacity: 0, y: -10}} animate={{ opacity: 1, y: 0 }} className="text-lg w-full h-auto p-10 bg-neutral-100 rounded-lg border border-neutral-300">
-                    <p>{content}</p>
+                    {content}
                 </motion.div>
             )}
         </div>
