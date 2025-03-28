@@ -3,54 +3,6 @@ import PersonIcon from "../assets/icons/person"
 import BullseyeIcon from "../assets/icons/bullseye"
 import Carousel from "./carousel";
 
-const INTEGRANTES_EQUIPO = [
-    {
-        nombre: "Elena Alonso",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/cftnorbfnvw2taf6jllk",
-        labor: "Cofounder & CEO",
-        linkedin: "https://ar.linkedin.com/in/elena-alonso-economista",
-    },
-    {
-        nombre: "Elena Alonso",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/cftnorbfnvw2taf6jllk",
-        labor: "Cofounder & CEO",
-        linkedin: "https://ar.linkedin.com/in/elena-alonso-economista",
-    },
-    {
-        nombre: "Elena Alonso",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/cftnorbfnvw2taf6jllk",
-        labor: "Cofounder & CEO",
-        linkedin: "https://ar.linkedin.com/in/elena-alonso-economista",
-    },
-    {
-        nombre: "Elena Alonso",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/cftnorbfnvw2taf6jllk",
-        labor: "Cofounder & CEO",
-        linkedin: "https://ar.linkedin.com/in/elena-alonso-economista",
-    },
-    {
-        nombre: "Elena Alonso",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/cftnorbfnvw2taf6jllk",
-        labor: "Cofounder & CEO",
-        linkedin: "https://ar.linkedin.com/in/elena-alonso-economista",
-    },
-    {
-        nombre: "Elena Alonso",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/cftnorbfnvw2taf6jllk",
-        labor: "Cofounder & CEO",
-        linkedin: "https://ar.linkedin.com/in/elena-alonso-economista",
-    },
-    {
-        nombre: "Elena Alonso7",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/cftnorbfnvw2taf6jllk",
-        labor: "Cofounder & CEO",
-        linkedin: "https://ar.linkedin.com/in/elena-alonso-economista",
-    },
-]
-
-
-
-
 export default function QuienesSomos() {
 
     return (
