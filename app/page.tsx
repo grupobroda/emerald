@@ -5,7 +5,7 @@ import QuienesSomos from "./components/quienesSomos";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Hero/>
       <AppSection/>
       <Informacion/>
