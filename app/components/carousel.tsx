@@ -148,17 +148,17 @@ export default function Carousel() {
                     </button>
                 </div>
             </div>
-            <div className="flex gap-5 transition-transform ease-out duration-700" style={{transform: `translateX(calc(-${currentIndex * slideWidthPercent}%))`}} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+            <div className="flex gap-5 transition-transform ease-out duration-700 md:gap-3" style={{transform: `translateX(calc(-${currentIndex * slideWidthPercent}%))`}} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                 {INTEGRANTES_EQUIPO.map((integrante) => (
                     <article
                         key={integrante.nombre}
                         className="bg-neutral-500 rounded-lg h-[380px] relative bg-cover bg-center bg-no-repeat overflow-hidden flex-shrink-0 group"
-                        style={{flex: `0 0 calc((100% - 3 * 1.25rem) / ${visibleSlides})`, backgroundImage: `url(${integrante.foto})`,}}>
+                        style={{flex: `0 0 ${visibleSlides === 1 ? '100%' : `calc((100% - ${(visibleSlides - 1) * 1.25}rem) / ${visibleSlides})`}`, backgroundImage: `url(${integrante.foto})`,}}>
                         <div className="absolute p-3 pb-4 bottom-0 from-black to-transparent bg-gradient-to-t w-full rounded-b-lg">
                             <h3 className="text-white text-xl font-bold">{integrante.nombre}</h3>
                             <span className="text-sm text-neutral-300">{integrante.labor}</span>
                         </div>
-                        <a href={integrante.linkedin} target="_blank" className="absolute right-3 -top-10 text-xs px-2 py-1 rounded group-hover:top-3 duration-200">
+                        <a href={integrante.linkedin} target="_blank" className="absolute right-3 -top-10 text-xs px-2 py-1 rounded group-hover:top-3 duration-200 md:top-3">
                             <LinkedinIcon/>
                         </a>
                     </article>
