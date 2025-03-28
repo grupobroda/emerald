@@ -7,51 +7,43 @@ import ChevronLeft from "../assets/icons/chevronleft"
 import ChevronRight from "../assets/icons/chevronright"
 import PauseIcon from "../assets/icons/pause"
 import PlayIcon from "../assets/icons/play"
-import { Play } from "next/font/google";
-
 
 const INTEGRANTES_EQUIPO = [
     {
         nombre: "Elena Alonso",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/cftnorbfnvw2taf6jllk",
+        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/js4sup0ech0gwicgtynq",
         labor: "Cofounder & CEO",
         linkedin: "https://ar.linkedin.com/in/elena-alonso-economista",
     },
     {
-        nombre: "Elena Alonso",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/cftnorbfnvw2taf6jllk",
-        labor: "Cofounder & CEO",
-        linkedin: "https://ar.linkedin.com/in/elena-alonso-economista",
+        nombre: "Aroma Vallejo",
+        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/yd3flzmuolmfcgxk1jjn",
+        labor: "Wealth Management Relationship",
+        linkedin: "https://www.linkedin.com/in/aromajulietavallejo/",
     },
     {
-        nombre: "Elena Alonso",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/cftnorbfnvw2taf6jllk",
-        labor: "Cofounder & CEO",
-        linkedin: "https://ar.linkedin.com/in/elena-alonso-economista",
+        nombre: "Victoria Jardel",
+        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/xle1pyouc1mka7xmlamr",
+        labor: "Local Financial Advisor",
+        linkedin: "https://www.linkedin.com/in/victoria-jardel/",
     },
     {
-        nombre: "Elena Alonso",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/cftnorbfnvw2taf6jllk",
-        labor: "Cofounder & CEO",
-        linkedin: "https://ar.linkedin.com/in/elena-alonso-economista",
+        nombre: "Melany Borgia",
+        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/c29xpzsgofnm0vlhunn4",
+        labor: "Jr. Investment Analyst",
+        linkedin: "https://www.linkedin.com/in/melany-borgia-093090226/",
     },
     {
-        nombre: "Elena Alonso",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/cftnorbfnvw2taf6jllk",
-        labor: "Cofounder & CEO",
-        linkedin: "https://ar.linkedin.com/in/elena-alonso-economista",
+        nombre: "Emiliano Sanchez Farés",
+        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/gkyki6kdax7u5wve9l7a",
+        labor: "Local Commercial Relationship",
+        linkedin: "https://www.linkedin.com/in/emiliano-sanchez-far%C3%A9s-188a1578/",
     },
     {
-        nombre: "Elena Alonso",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/cftnorbfnvw2taf6jllk",
-        labor: "Cofounder & CEO",
-        linkedin: "https://ar.linkedin.com/in/elena-alonso-economista",
-    },
-    {
-        nombre: "Elena Alonso",
-        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/cftnorbfnvw2taf6jllk",
-        labor: "Cofounder & CEO",
-        linkedin: "https://ar.linkedin.com/in/elena-alonso-economista",
+        nombre: "Fernando Ibarra",
+        foto: "https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/tlinhu4wwlgqkczxlgfz",
+        labor: "Asset Management & Investment Specialist",
+        linkedin: "https://www.linkedin.com/in/fernando-ibarra-0533a6190/",
     },
 ]
 
@@ -152,7 +144,7 @@ export default function Carousel() {
                 {INTEGRANTES_EQUIPO.map((integrante) => (
                     <article
                         key={integrante.nombre}
-                        className="bg-neutral-500 rounded-lg h-[380px] relative bg-cover bg-center bg-no-repeat overflow-hidden flex-shrink-0 group"
+                        className="bg-neutral-500 rounded-lg h-[380px] relative bg-cover bg-top bg-no-repeat overflow-hidden flex-shrink-0 group"
                         style={{flex: `0 0 ${visibleSlides === 1 ? '100%' : `calc((100% - ${(visibleSlides - 1) * 1.25}rem) / ${visibleSlides})`}`, backgroundImage: `url(${integrante.foto})`,}}>
                         <div className="absolute p-3 pb-4 bottom-0 from-black to-transparent bg-gradient-to-t w-full rounded-b-lg">
                             <h3 className="text-white text-xl font-bold">{integrante.nombre}</h3>
