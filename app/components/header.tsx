@@ -3,19 +3,13 @@ import React, { useEffect, useState } from "react";
 import ChartIcon from "../assets/icons/chart";
 import Menu from "../assets/icons/menu"
 import Link from "next/link";
-import { motion } from "motion/react"
 
 export default function Header() {
 
     const [navbar, setNavbar] = useState(false)
-    const transition = {
-        duration: 0.8,
-        delay: 0.5,
-        ease: [0, 0.71, 0.2, 1.01],
-      }
 
     return(
-        <motion.header initial={{ opacity: 0, y: -10}} animate={{ opacity: 1, y: 0 }} transition={transition} className="flex gap-10 justify-between items-center px-10 py-6 wrapperHeader z-20 fixed">
+        <header className="flex gap-10 justify-between items-center px-10 py-6 wrapperHeader z-20 fixed">
             {navbar && (
                 <div className="z-30 top-0 left-0 w-screen h-screen bg-black absolute px-10 py-6">
                     <div className="w-full inline-flex items-center justify-between">
@@ -42,6 +36,6 @@ export default function Header() {
                     <Menu/>
                 </div>
             </div>
-        </motion.header>
+        </header>
     )
 }

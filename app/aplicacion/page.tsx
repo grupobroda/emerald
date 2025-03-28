@@ -1,11 +1,21 @@
+"use client"
+
 import React from "react";
 import AvailablePlaystore from "../components/atoms/availablePlayStore";
 import AvailableAppStore from "../components/atoms/availapleAppStore";
+import { motion } from "motion/react";
 
 export default function Aplicacion() {
+
+    const transition = {
+        duration: 0.8,
+        delay: 0.3,
+        ease: [0, 0.71, 0.2, 1.01],
+    }
+
     return(
         <section className="grid grid-cols-2 gap-10 py-40 bg-[#034941] xl:flex xl:flex-col xl:px-10 xl:items-center xl:h-auto">
-            <div className="flex flex-col justify-center gap-20 pl-20 xl:pl-0 xl:pt-20">
+            <motion.div initial={{ opacity: 0, y: 10}} animate={{ opacity: 1, y: 0 }} transition={transition} className="flex flex-col justify-center gap-20 pl-20 xl:pl-0 xl:pt-20">
                 <h1 className="text-white text-6xl font-bold xl:w-full">¡Ahora podés operar desde <span className="degradadoTexto">cualquier lado</span> con nuestra aplicación!</h1>
                 <div className="flex flex-col gap-5 text-neutral-300">
                     <p>Con la aplicación, vas a poder acceder a instrumentos financieros, permitiéndote operar de manera rápida e eficiente además de visualizar fácilmente tu cartera de inversión, órdenes y rendimientos.</p>
@@ -16,10 +26,10 @@ export default function Aplicacion() {
                     <AvailablePlaystore/>
                     <AvailableAppStore/>
                 </div>
-            </div>
-            <div className="flex justify-center pr-20 xl:hidden">
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 10}} animate={{ opacity: 1, y: 0 }} transition={transition} className="flex justify-center pr-20 xl:hidden">
                 <img className="h-[700px]" src="https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/gdqzxqeu2tn8wwsfe2mx" alt="Preview de la aplicación"/>
-            </div>
+            </motion.div>
         </section>
     )
 }
