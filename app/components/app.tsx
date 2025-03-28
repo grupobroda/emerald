@@ -9,7 +9,7 @@ export default function AppSection() {
 
     const transition = {
         duration: 0.8,
-        delay: 1.2,
+        delay: 0.3,
         ease: [0, 0.71, 0.2, 1.01],
       }
 
@@ -22,7 +22,7 @@ export default function AppSection() {
                     <AvailableAppStore/>
                 </div>
             </div>
-            <motion.div initial={{ opacity: 0, y: 10}} animate={{ opacity: 1, y: 0 }} transition={transition} className="relative md:hidden">
+            <motion.div initial={{ opacity: 0, y: 50}} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={transition} className="relative md:hidden">
                 <img className="absolute -bottom-30 left-1/2 transform -translate-x-1/2 h-[450px] z-10 md:relative md:-bottom-20" src="https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/gdqzxqeu2tn8wwsfe2mx" alt="Preview de la aplicación"/>
             </motion.div>
         </section>

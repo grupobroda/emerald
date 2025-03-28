@@ -1,9 +1,4 @@
-"use client"
-
 import React from "react";
-import { useEffect, useRef, useState } from 'react'
-
-import LinkedinIcon from "../assets/icons/linkedin"
 import PersonIcon from "../assets/icons/person"
 import BullseyeIcon from "../assets/icons/bullseye"
 import Carousel from "./carousel";

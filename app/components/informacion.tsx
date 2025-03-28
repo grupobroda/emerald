@@ -22,6 +22,13 @@ const INFO_MOCK = [
     }]
 
 export default function Informacion() {
+
+    const transition = {
+        duration: 0.8,
+        delay: 0.3,
+        ease: [0, 0.71, 0.2, 1.01],
+    }
+
     return(
         <section className="grid grid-cols-3 p-20 pt-30 gap-5 lg:flex lg:flex-col md:px-10">
             {INFO_MOCK.map((info)=> {
