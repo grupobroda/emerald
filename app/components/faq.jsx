@@ -23,7 +23,7 @@ export default function Faq() {
     ]
 
     return(
-        <section className="flex flex-col p-20 pt-30 gap-10 lg:flex lg:flex-col md:px-10" id="faq">
+        <section className="flex flex-col p-20 px-80 pt-30 gap-10 lg:flex lg:flex-col lg:px-20 md:px-10" id="faq">
             <div className="w-full inline-flex items-center justify-center gap-3 md:flex-col">
                 <h3 className="text-5xl font-bold md:text-center">Preguntas Frecuentes</h3>
             </div>
