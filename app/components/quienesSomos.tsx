@@ -59,14 +59,14 @@ const INTEGRANTES_EQUIPO = [
 export default function QuienesSomos() {
 
     return (
-        <section className="flex flex-col gap-20 py-20 md:px-10 xl:px-20 px-80" id="quienesSomos">
+        <section className="flex flex-col gap-20 py-20 px-80 lg:px-20 md:px-10" id="quienesSomos">
             <div className="grid grid-cols-2 gap-10 xl:flex xl:flex-col">
-                <div className="flex flex-col gap-5 p-5 rounded-lg md:p-5">
+                <div className="flex flex-col gap-5 p-5 rounded-lg">
                     <div className="inline-flex items-center gap-3 md:flex-col">
                         <div className="flex items-center justify-center bg-[#218F7F]/45 h-20 w-20 rounded-lg">
                             <PersonIcon/>
                         </div>
-                        <h3 className="text-5xl font-bold md:text-center">¿Quiénes somos?</h3>
+                        <h3 className="text-5xl font-bold md:text-center">Nosotros</h3>
                     </div>
                     <p className="text-neutral-600 text-xl">Unidad financiera de Grupo Broda, empresa de triple impacto global que con originalidad: invierte, desarrolla y gestiona modelos de negocios sostenibles.</p>
                 </div>

@@ -17,8 +17,8 @@ export default function Aplicacion() {
                     <AvailableAppStore/>
                 </div>
             </div>
-            <div className="pr-20 xl:hidden">
-                <img src="https://res.cloudinary.com/diruiumfk/image/upload/v1743109045/5c009976-fa00-4b1e-8935-ebb766b32d6f_oo6unk.jpg" alt="Preview de la aplicacion" />
+            <div className="flex justify-center pr-20 xl:hidden">
+                <img className="h-[700px]" src="https://res.cloudinary.com/dgbsqdjqy/image/upload/f_auto,q_auto/gdqzxqeu2tn8wwsfe2mx" alt="Preview de la aplicación"/>
             </div>
         </section>
     )

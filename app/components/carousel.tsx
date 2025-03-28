@@ -138,7 +138,7 @@ export default function Carousel() {
             <div className="pointer-events-none absolute top-0 left-0 h-full w-10 bg-gradient-to-r from-white to-transparent z-10 md:hidden" />
             <div className="pointer-events-none absolute top-0 right-0 h-full w-10 bg-gradient-to-l from-white to-transparent z-10 md:hidden" />
             <div>
-                <div className="inline-flex w-full justify-between gap-3 px-5 pb-4">
+                <div className="inline-flex w-full justify-between gap-3 px-5 pb-4 md:px-0">
                     <div className="inline-flex gap-3">
                         <button onClick={handlePrev} className="inline-flex items-center justify-center bg-[#034941] text-white w-10 h-10 rounded-full cursor-pointer hover:bg-[#1C8675] duration-200"><ChevronLeft/></button>
                         <button onClick={handleNext} className="inline-flex items-center justify-center bg-[#034941] text-white w-10 h-10 rounded-full cursor-pointer hover:bg-[#1C8675] duration-200"><ChevronRight/></button>
