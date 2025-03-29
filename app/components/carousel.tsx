@@ -109,7 +109,7 @@ export default function Carousel() {
                             <h3 className="text-white text-xl font-bold">{integrante.nombre}</h3>
                             <span className="text-sm text-neutral-300">{integrante.labor}</span>
                         </div>
-                        <a href={integrante.linkedin} target="_blank" className="absolute right-3 -top-10 text-xs px-2 py-1 rounded group-hover:top-3 duration-200 md:top-3">
+                        <a aria-label={"Ir al perfil de LinkedIn de " + integrante.nombre} href={integrante.linkedin} target="_blank" className="absolute right-3 -top-10 text-xs px-2 py-1 rounded group-hover:top-3 duration-200 md:top-3">
                             <LinkedinIcon/>
                         </a>
                     </article>
