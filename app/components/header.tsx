@@ -23,11 +23,21 @@ export default function Header() {
             </Link>
             <div>
                 <ul className="flex justify-center gap-10 text-white lg:hidden">
-                    <Link aria-label="Ir a Nosotros" href="#quienesSomos" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">Nosotros</Link>
-                    <Link aria-label="Ir a Mercado" href="" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">Mercado</Link>
-                    <Link aria-label="Ir a Preguntas Frecuentes" href="#faq" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">FAQ</Link>
-                    <Link aria-label="Ir a Contacto" href="" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">Contacto</Link>
-                    <Link aria-label="Ir a Aplicación" href="/aplicacion" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">App</Link>
+                    <li>
+                        <Link aria-label="Ir a Nosotros" href="#quienesSomos" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">Nosotros</Link>
+                    </li>
+                    <li>
+                        <Link aria-label="Ir a Mercado" href="" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">Mercado</Link>
+                    </li>
+                    <li>
+                        <Link aria-label="Ir a Preguntas Frecuentes" href="#faq" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">FAQ</Link>
+                    </li>
+                    <li>
+                        <Link aria-label="Ir a Contacto" href="" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">Contacto</Link>
+                    </li>
+                    <li>
+                        <Link aria-label="Ir a Aplicación" href="/aplicacion" className="hover:bg-neutral-200/30 px-5 py-3 rounded-full duration-200">App</Link>
+                    </li>
                 </ul>
             </div>
             <div className="inline-flex items-center gap-5">
