@@ -91,10 +91,10 @@ export default function Carousel() {
             <div>
                 <div className="inline-flex w-full justify-between gap-3 px-5 pb-4 md:px-0">
                     <div className="inline-flex gap-3">
-                        <button onClick={handlePrev} className="inline-flex items-center justify-center bg-[#034941] text-white w-10 h-10 rounded-full cursor-pointer hover:bg-[#1C8675] duration-200"><ChevronLeft/></button>
-                        <button onClick={handleNext} className="inline-flex items-center justify-center bg-[#034941] text-white w-10 h-10 rounded-full cursor-pointer hover:bg-[#1C8675] duration-200"><ChevronRight/></button>
+                        <button aria-label="Ir hacia la izquierda" onClick={handlePrev} className="inline-flex items-center justify-center bg-[#034941] text-white w-10 h-10 rounded-full cursor-pointer hover:bg-[#1C8675] duration-200"><ChevronLeft/></button>
+                        <button aria-label="Ir hacia la derecha" onClick={handleNext} className="inline-flex items-center justify-center bg-[#034941] text-white w-10 h-10 rounded-full cursor-pointer hover:bg-[#1C8675] duration-200"><ChevronRight/></button>
                     </div>
-                    <button onClick={() => setIsPaused(!isPaused)} className="inline-flex items-center justify-center bg-[#034941] text-white w-20 h-10 rounded-full cursor-pointer hover:bg-[#1C8675] duration-200">
+                    <button aria-label="Pausar desplazamiento automático" onClick={() => setIsPaused(!isPaused)} className="inline-flex items-center justify-center bg-[#034941] text-white w-20 h-10 rounded-full cursor-pointer hover:bg-[#1C8675] duration-200">
                         {isPaused ? <PlayIcon/> : <PauseIcon/>}
                     </button>
                 </div>

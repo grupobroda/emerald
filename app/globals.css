@@ -37,7 +37,7 @@
 }
 
 .ctaButton {
-  @apply inline-flex gap-2 bg-[#218F7F] px-6 hover:bg-[#1C8675] rounded-full text-white duration-200
+  @apply inline-flex gap-2 bg-[#26B09B] px-6 hover:bg-[#218F7F] rounded-full text-black hover:text-white duration-200
 }
 
 .secondaryButton {
